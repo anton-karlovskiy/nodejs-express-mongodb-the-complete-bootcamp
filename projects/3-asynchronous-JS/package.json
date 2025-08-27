@@ -1,0 +1,17 @@
+{
+    "name": "asynchronous-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "author": "Jonas Schmedtmann",
+    "license": "ISC",
+    "dependencies": {
+        "superagent": "*"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.11"
+    }
+}
