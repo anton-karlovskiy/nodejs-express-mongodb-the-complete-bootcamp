@@ -705,16 +705,16 @@ git commit -m \"MESSAGE\"
 git remote add origin
 https://github.com/jonasschmedtmann/natours-rec.git
 
-  * origin: the remote branch (repo) is going to be called origin
+\* origin: the remote branch (repo) is going to be called origin
 
-  * https://github.com/jonasschmedtmann/natours-rec.git: the remote repo
+\* https://github.com/jonasschmedtmann/natours-rec.git: the remote repo
 is located in this URL
 
 git push origin master
 
-  * origin: the name of the remote branch
+\* origin: the name of the remote branch
 
-  * master: the name of the local branch
+\* master: the name of the local branch
 
 git pull origin master
 
