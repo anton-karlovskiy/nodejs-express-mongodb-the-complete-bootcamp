@@ -114,7 +114,7 @@ Useful VS extensions
 3.2 AN OVERVIEW OF HOW THE WEB WORKS
 
 ![WHAT HAPPENS WHEN WE ACCESS A
-WEBPAGE](./media/media/image1.png){width="7.261111111111111in"
+WEBPAGE](./media/image1.png){width="7.261111111111111in"
 height="3.9625in"}
 
 <https://www.google.com/maps> (Protocol (HTTP or HTTPS) + Domain name +
@@ -160,23 +160,23 @@ destination that they should go using IP addresses on each packet.
 3.4 FRONT-END VS. BACK-END WEB DEVELOPMENT
 
 ![FRONT-END AND
-BACK-END](./media/media/image2.png){width="7.266666666666667in"
+BACK-END](./media/image2.png){width="7.266666666666667in"
 height="4.069444444444445in"}
 
 3.5 STATIC VS DYNAMIC VS API
 
 ![STATIC WEBSITES VS DYNAMIC
-WEBSITES](./media/media/image3.png){width="7.261805555555555in"
+WEBSITES](./media/image3.png){width="7.261805555555555in"
 height="4.0784722222222225in"}
 
 ![DYNAMIC WEBSITES VS API-POWERED
-WEBSITES](./media/media/image4.png){width="7.2625in"
+WEBSITES](./media/image4.png){width="7.2625in"
 height="4.057638888888889in"}
 
 4.2 NODE. V8. LIBUV AND C++
 
 ![THE NODE.JS ARCHITECTURE BEHIND THE
-SCENES](./media/media/image5.png){width="7.2625in"
+SCENES](./media/image5.png){width="7.2625in"
 height="4.072916666666667in"}
 
 V8 engine is what converts JavaScript code into machine code that a
@@ -198,27 +198,27 @@ request stuff, OpenSSL for cryptography, and also zlib for compression.
 
 4.3 PROCESSES. THREADS AND THE THREAD POOL
 
-![NODE PROCESS AND THREADS](./media/media/image6.png){width="7.2625in"
+![NODE PROCESS AND THREADS](./media/image6.png){width="7.2625in"
 height="4.063194444444444in"}
 
 4.4 THE NODE.JS EVENT LOOP
 
 ![THE HEART OF NODE.JS THE EVENT
-LOOP](./media/media/image7.png){width="7.2625in"
+LOOP](./media/image7.png){width="7.2625in"
 height="4.079861111111111in"}
 
 ![THE EVENT LOOP IN
-DETAIL](./media/media/image8.png){width="7.258333333333334in"
+DETAIL](./media/image8.png){width="7.258333333333334in"
 height="4.081944444444445in"}
 
 ![SUMMARY OF THE EVENT LOOP NODE VS.
-OTHERS](./media/media/image9.png){width="7.258333333333334in"
+OTHERS](./media/image9.png){width="7.258333333333334in"
 height="4.0680555555555555in"}
 
 4.6 EVENTS AND EVENT-DRIVEN ARCHITECTURE
 
 ![THE EVENT-DRIVEN
-ARCHITECTURE](./media/media/image10.png){width="7.2625in"
+ARCHITECTURE](./media/image10.png){width="7.2625in"
 height="4.077083333333333in"}
 
 4.8 INTRODUCTION TO STREAMS
@@ -238,7 +238,7 @@ and server that works in both directions and stays open once the
 connection has been established.
 
 ![NODE.JS STREAMS
-FUNDAMENTALS](./media/media/image11.png){width="7.2625in"
+FUNDAMENTALS](./media/image11.png){width="7.2625in"
 height="4.077083333333333in"}
 
 4.9 STREAMS IN PRACTICE
@@ -255,25 +255,25 @@ fast as it is receiving it from the file.
 4.10 HOW REQUIRING MODULES REALLY WORKS
 
 ![THE COMMONJS MODULE
-SYSTEM](./media/media/image12.png){width="7.258333333333334in"
+SYSTEM](./media/image12.png){width="7.258333333333334in"
 height="4.086111111111111in"}
 
 ![WHAT HAPPENS WHEN WE REQUIRE() A
-MODULE](./media/media/image13.png){width="7.267361111111111in"
+MODULE](./media/image13.png){width="7.267361111111111in"
 height="4.072916666666667in"}
 
 ![WHAT HAPPENS WHEN WE REQUIRE() A MODULE
-(WRAPPING)](./media/media/image14.png){width="7.258333333333334in"
+(WRAPPING)](./media/image14.png){width="7.258333333333334in"
 height="4.0784722222222225in"}
 
 ![WHAT HAPPENS WHEN WE REQUIRE() A MODULE (RETURNING
-EXPORTS)](./media/media/image15.png){width="7.263194444444444in"
+EXPORTS)](./media/image15.png){width="7.263194444444444in"
 height="4.074305555555555in"}
 
 6.2 WHAT IS EXPRESS?
 
 ![WHAT IS EXPRESS AND WHY USE
-IT](./media/media/image16.png){width="7.267361111111111in"
+IT](./media/image16.png){width="7.267361111111111in"
 height="4.086111111111111in"}
 
 6.4 SETTING UP EXPRESS AND BASIC ROUTING
@@ -283,14 +283,14 @@ It's kind of convention to have all the Express configuration in app.js.
 6.5 APIS AND RESTFUL API DESIGN
 
 ![WHAT IS AN API
-ANYWAY](./media/media/image17.png){width="7.267361111111111in"
+ANYWAY](./media/image17.png){width="7.267361111111111in"
 height="4.090972222222222in"}
 
 REST, which stands for Representational States Transfer, is basically a
 way of building web APIs in a logical way, making them easy to consume.
 
 ![THE REST
-ARCHITECTURE](./media/media/image18.png){width="7.267361111111111in"
+ARCHITECTURE](./media/image18.png){width="7.267361111111111in"
 height="4.081944444444445in"}
 
 The difference between PUT and PATCH is that with PUT, the client is
@@ -298,15 +298,15 @@ supposed to send the entire updated object, while with PATCH, it is
 supposed to send only the part of the object that has been changed.
 
 ![THE REST ARCHITECTURE
-(2)](./media/media/image19.png){width="7.258333333333334in"
+(2)](./media/image19.png){width="7.258333333333334in"
 height="4.081944444444445in"}
 
 ![THE REST ARCHITECTURE
-(3)](./media/media/image20.png){width="7.258333333333334in"
+(3)](./media/image20.png){width="7.258333333333334in"
 height="4.074305555555555in"}
 
 ![THE REST ARCHITECTURE
-(4)](./media/media/image21.png){width="7.267361111111111in"
+(4)](./media/image21.png){width="7.267361111111111in"
 height="4.090972222222222in"}
 
 6.6 STARTING OUR API: HANDLING GET REQUESTS
@@ -325,7 +325,7 @@ request goes through while it's being processed.
 6.12 MIDDLEWARE AND THE REQUEST-RESPONSE CYCLE
 
 ![THE ESSENCE OF EXPRESS DEVELOPMENT THE REQUEST-RESPONSE
-CYCLE](./media/media/image22.png){width="7.2625in"
+CYCLE](./media/image22.png){width="7.2625in"
 height="4.086111111111111in"}
 
 6.18 PARAM MIDDLEWARE
@@ -397,27 +397,27 @@ or just showing a warning instead of showing an error.
 7.2 WHAT IS MONGODB?
 
 ![MONGODB AN
-OVERVIEW](./media/media/image23.png){width="7.267361111111111in"
+OVERVIEW](./media/image23.png){width="7.267361111111111in"
 height="4.081944444444445in"}
 
 ![MONGODB AN OVERVIEW
-(2)](./media/media/image24.png){width="7.258333333333334in"
+(2)](./media/image24.png){width="7.258333333333334in"
 height="4.083333333333333in"}
 
 ![MONGODB AN OVERVIEW
-(3)](./media/media/image25.png){width="7.263194444444444in"
+(3)](./media/image25.png){width="7.263194444444444in"
 height="4.074305555555555in"}
 
 8.3 WHAT IS MONGOOSE?
 
 ![WHAT IS MONGOOSE AND WHY USE
-IT](./media/media/image26.png){width="7.267361111111111in"
+IT](./media/image26.png){width="7.267361111111111in"
 height="4.086111111111111in"}
 
 8.6 INTRO TO BACK-END ARCHITECTURE: MVC, TYPES OF LOGIC, AND MORE
 
 ![MVC ARCHITECTURE IN OUR EXPRESS
-APP](./media/media/image27.png){width="7.267361111111111in"
+APP](./media/image27.png){width="7.267361111111111in"
 height="4.086111111111111in"}
 
 One of the big goals of MVC is to separate business logic from
@@ -431,7 +431,7 @@ library, for example. So again, application logic is the logic that
 makes the app actually work.
 
 ![APPLICATION VS. BUSINESS
-LOGIC](./media/media/image28.png){width="7.258333333333334in"
+LOGIC](./media/image28.png){width="7.258333333333334in"
 height="4.074305555555555in"}
 
 Application logic and business logic are almost impossible to completely
@@ -488,7 +488,7 @@ user as it is. So, we always need to sanitize that incoming data.
 9.4 AN OVERVIEW OF ERROR HANDLING
 
 ![ERROR HANDLING IN EXPRESS AN
-OVERVIEW](./media/media/image29.png){width="7.258333333333334in"
+OVERVIEW](./media/image29.png){width="7.258333333333334in"
 height="4.083333333333333in"}
 
 10.5 HOW AUTHENTICATION WITH JWT WORKS
@@ -499,7 +499,7 @@ perfect for restful APIs like the one that we're building. Because
 restful APIs should always be stateless.
 
 ![HOW JSON WEB TOKEN (JWT) AUTHENTICATION
-WORKS](./media/media/image30.png){width="7.2625in"
+WORKS](./media/image30.png){width="7.2625in"
 height="4.086111111111111in"}
 
 Essentially, it's an encoding string made up of three parts. The header,
@@ -516,7 +516,7 @@ is saved on the server. And this whole process is then called signing
 the Json Web Token.
 
 ![WHAT A JWT LOOKS
-LIKE](./media/media/image31.png){width="7.267361111111111in"
+LIKE](./media/image31.png){width="7.267361111111111in"
 height="4.090972222222222in"}
 
 So again, the signing algorithm takes the header, the payload and the
@@ -548,18 +548,18 @@ manipulated data. And therefore, the verification will always fail in
 this case. And that's the key to making this whole system work.
 
 ![HOW SIGNING AND VERIFYING
-WORKS](./media/media/image32.png){width="7.267361111111111in"
+WORKS](./media/image32.png){width="7.267361111111111in"
 height="4.086111111111111in"}
 
 10.8 PROTECTING TOUR ROUTES - PART 1
 
-![AUTHENTICATION WORKFLOW](./media/media/image33.png){width="7.2625in"
+![AUTHENTICATION WORKFLOW](./media/image33.png){width="7.2625in"
 height="4.086111111111111in"}
 
 10.18 SECURITY BEST PRACTICES
 
 ![SECURITY BEST PRACTICES AND
-SUGGESTIONS](./media/media/image34.png){width="7.258333333333334in"
+SUGGESTIONS](./media/image34.png){width="7.258333333333334in"
 height="4.074305555555555in"}
 
 10.19 SENDING JWT VIA COOKIE
@@ -587,19 +587,19 @@ Data modeling is the process of taking unstructured data generated by a
 real world scenario and then structure it into a logical data model in a
 database.
 
-![DATA WHAT](./media/media/image35.png){width="7.258333333333334in"
+![DATA WHAT](./media/image35.png){width="7.258333333333334in"
 height="4.069444444444445in"}
 
 ![1 TYPES OF RELATIONSHIPS BETWEEN
-DATA](./media/media/image36.png){width="7.267361111111111in"
+DATA](./media/image36.png){width="7.267361111111111in"
 height="4.081944444444445in"}
 
 ![2 REFERENCING VS.
-EMBEDDING](./media/media/image37.png){width="7.267361111111111in"
+EMBEDDING](./media/image37.png){width="7.267361111111111in"
 height="4.081944444444445in"}
 
 ![3 WHEN TO EMBED AND WHEN TO REFERENCE A PRACTICAL
-FRAMEWORK](./media/media/image38.png){width="7.258333333333334in"
+FRAMEWORK](./media/image38.png){width="7.258333333333334in"
 height="4.0784722222222225in"}
 
 Always keep in mind that one of the most important principles of MongoDB
@@ -607,16 +607,16 @@ data modeling is that array should never be allowed to grow indefinitely
 in order to never break that 16 megabyte limit.
 
 ![4 TYPES OF
-REFERENCING](./media/media/image39.png){width="7.258333333333334in"
+REFERENCING](./media/image39.png){width="7.258333333333334in"
 height="4.0784722222222225in"}
 
-![SUMMARY](./media/media/image40.png){width="7.267361111111111in"
+![SUMMARY](./media/image40.png){width="7.267361111111111in"
 height="4.077083333333333in"}
 
 11.3 DESIGNING OUR DATA MODEL
 
 ![THE NATOURS DATA
-MODEL](./media/media/image41.png){width="7.263194444444444in"
+MODEL](./media/image41.png){width="7.263194444444444in"
 height="4.074305555555555in"}
 
 11.4 MODELLING LOCATIONS (GEOSPATIAL DATA)
@@ -627,7 +627,7 @@ longitude and latitude coordinates.
 12.2 RECAP: SERVER-SIDE VS CLIENT-SIDE RENDERING
 
 ![SERVER-SIDE VS CLIENT-SIDE
-RENDERING](./media/media/image42.png){width="7.258333333333334in"
+RENDERING](./media/image42.png){width="7.258333333333334in"
 height="4.072916666666667in"}
 
 12.11 BUILDING THE TOUR PAGE - PART 1
@@ -667,17 +667,17 @@ use something called Stripe Webhooks on our back-end, in order to create
 new bookings.
 
 ![STRIPE
-WORKFLOW](./media/media/image43.png){width="7.258333333333334in"
+WORKFLOW](./media/image43.png){width="7.258333333333334in"
 height="4.069444444444445in"}
 
 13.20 FINAL CONSIDERATIONS
 
 ![CHALLENGES
-(API)](./media/media/image44.png){width="7.267361111111111in"
+(API)](./media/image44.png){width="7.267361111111111in"
 height="4.077083333333333in"}
 
 ![CHALLENGES
-(WEBSITE)](./media/media/image45.png){width="7.267361111111111in"
+(WEBSITE)](./media/image45.png){width="7.267361111111111in"
 height="4.077083333333333in"}
 
 14.2 SETTING UP GIT AND GITHUB
