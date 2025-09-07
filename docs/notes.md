@@ -690,33 +690,32 @@ GitHub is basically a platform where you can host your own git
 repositories for free, in order to share it with other developers or
 just to keep it secure for yourself.
 
+```bash
 git config \--global user.name "Jonas Schmedtmann"
-
 git config \--global user.email <example@google.com>
+```
 
+```bash
 git init
+```
 
+```bash
 git status
-
 git add -A
-
 git commit -m \"MESSAGE\"
+```
 
-git remote add origin
-https://github.com/jonasschmedtmann/natours-rec.git
-
-\* origin: the remote branch (repo) is going to be called origin
-
-\* https://github.com/jonasschmedtmann/natours-rec.git: the remote repo
-is located in this URL
-
+```bash
+git remote add origin https://github.com/jonasschmedtmann/natours-rec.git
 git push origin master
-
-\* origin: the name of the remote branch
-
-\* master: the name of the local branch
-
 git pull origin master
+```
+
+* origin: the remote branch (repo) is going to be called origin
+* https://github.com/jonasschmedtmann/natours-rec.git: the remote repo
+is located in this URL
+* origin: the name of the remote branch
+* master: the name of the local branch
 
 14.3 GIT FUNDAMENTALS
 
