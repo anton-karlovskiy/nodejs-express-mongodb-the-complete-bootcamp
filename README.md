@@ -22,3 +22,8 @@ This repository contains my personal **notes, illustrations, and projects** crea
 - **Deployment**
 
 ---
+
+## 📎 References
+- **Official course repo (starter files & final code):** [jonasschmedtmann/complete-node-bootcamp](https://github.com/jonasschmedtmann/complete-node-bootcamp)
+
+---
