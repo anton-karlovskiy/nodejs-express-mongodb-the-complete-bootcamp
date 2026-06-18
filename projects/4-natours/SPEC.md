@@ -347,5 +347,5 @@ export default tseslint.config(
 4. Apply bug fixes listed above
 5. Apply breaking change adaptations (Stripe, html-to-text, xss-clean, Mongoose connect, rate-limit)
 6. Update `package.json` scripts and ESLint/Prettier config
-7. `npm run typecheck` — resolve all type errors
+7. `pnpm typecheck` — resolve all type errors
 8. Manual smoke test with a running MongoDB instance

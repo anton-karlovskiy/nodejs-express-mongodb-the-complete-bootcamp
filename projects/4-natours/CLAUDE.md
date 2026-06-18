@@ -17,14 +17,14 @@ Natours is a full-stack adventure tour booking platform — Express REST API + s
 
 ```bash
 # Development (with hot reload)
-npm run start:dev
+pnpm start:dev
 
 # Production
-npm run start:prod
+pnpm start:prod
 
 # Bundle frontend JS (public/js/index.js → public/js/bundle.js)
-npm run watch:js
-npm run build:js
+pnpm watch:js
+pnpm build:js
 
 # Seed / wipe the database
 node dev-data/data/import-dev-data.js --import
@@ -96,10 +96,10 @@ STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET
 
 ```bash
 # ESLint (airbnb + prettier + node)
-npx eslint .
+pnpm exec eslint .
 
 # Prettier
-npx prettier --write .
+pnpm exec prettier --write .
 ```
 
 Config: `.eslintrc.json` (airbnb base), `.prettierrc`.
