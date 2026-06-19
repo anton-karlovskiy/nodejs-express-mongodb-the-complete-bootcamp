@@ -3,25 +3,28 @@ import http from 'http';
 import url from 'url';
 import path from 'path';
 import slugify from 'slugify';
-import replaceTemplate, { Product } from './modules/replaceTemplate';
+import replaceTemplate, { Product } from './utils/replaceTemplate';
 
-const tempOverview = fs.readFileSync(
+const overviewTemplate = fs.readFileSync(
   path.join(__dirname, '..', 'templates', 'template-overview.html'),
   'utf-8',
 );
-const tempCard = fs.readFileSync(
+const cardTemplate = fs.readFileSync(
   path.join(__dirname, '..', 'templates', 'template-card.html'),
   'utf-8',
 );
-const tempProduct = fs.readFileSync(
+const productTemplate = fs.readFileSync(
   path.join(__dirname, '..', 'templates', 'template-product.html'),
   'utf-8',
 );
 
-const data = fs.readFileSync(path.join(__dirname, '..', 'dev-data', 'data.json'), 'utf-8');
-const dataObj: Product[] = JSON.parse(data) as Product[];
+const productsJson = fs.readFileSync(
+  path.join(__dirname, '..', 'dev-data', 'data.json'),
+  'utf-8',
+);
+const products: Product[] = JSON.parse(productsJson) as Product[];
 
-const slugs = dataObj.map(el => slugify(el.productName, { lower: true }));
+const slugs = products.map(product => slugify(product.productName, { lower: true }));
 console.log(slugs);
 
 const server = http.createServer((req, res) => {
@@ -30,22 +33,22 @@ const server = http.createServer((req, res) => {
   // Overview page
   if (pathname === '/' || pathname === '/overview') {
     res.writeHead(200, { 'Content-type': 'text/html' });
-    const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).join('');
-    const output = tempOverview.replace('{%PRODUCT_CARDS%}', cardsHtml);
+    const cardsHtml = products.map(product => replaceTemplate(cardTemplate, product)).join('');
+    const output = overviewTemplate.replace('{%PRODUCT_CARDS%}', cardsHtml);
     res.end(output);
 
     // Product page
   } else if (pathname === '/product') {
     res.writeHead(200, { 'Content-type': 'text/html' });
     const id = Number(Array.isArray(query.id) ? query.id[0] : query.id);
-    const product = dataObj[id];
-    const output = replaceTemplate(tempProduct, product);
+    const product = products[id];
+    const output = replaceTemplate(productTemplate, product);
     res.end(output);
 
     // API
   } else if (pathname === '/api') {
     res.writeHead(200, { 'Content-type': 'application/json' });
-    res.end(data);
+    res.end(productsJson);
 
     // Not found
   } else {

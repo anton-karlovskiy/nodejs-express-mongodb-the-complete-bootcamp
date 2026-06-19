@@ -1,16 +1,16 @@
 // module.exports
-import C from './test-module-1';
+import Calculator from './calculator';
 
-const calc1 = new C();
-console.log(calc1.add(2, 5));
+const calculator = new Calculator();
+console.log(calculator.add(2, 5));
 
 // exports
-import { multiply } from './test-module-2';
+import { multiply } from './math-utils';
 
 console.log(multiply(2, 5));
 
 // caching
-import logText from './test-module-3';
+import logText from './cached-module';
 
 logText();
 logText();

@@ -3,21 +3,21 @@ import http from 'http';
 
 class Sales extends EventEmitter {}
 
-const myEmitter = new Sales();
+const salesEmitter = new Sales();
 
-myEmitter.on('newSale', () => {
+salesEmitter.on('newSale', () => {
   console.log('There was a new sale!');
 });
 
-myEmitter.on('newSale', () => {
+salesEmitter.on('newSale', () => {
   console.log('Customer name: Jonas');
 });
 
-myEmitter.on('newSale', (stock: number) => {
+salesEmitter.on('newSale', (stock: number) => {
   console.log(`There are now ${stock} items left in stock.`);
 });
 
-myEmitter.emit('newSale', 9);
+salesEmitter.emit('newSale', 9);
 
 //////////////////
 

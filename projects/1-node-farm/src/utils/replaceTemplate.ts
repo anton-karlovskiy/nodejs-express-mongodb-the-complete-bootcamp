@@ -10,8 +10,8 @@ export interface Product {
   organic: boolean;
 }
 
-const replaceTemplate = (temp: string, product: Product): string => {
-  let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
+const replaceTemplate = (template: string, product: Product): string => {
+  let output = template.replace(/{%PRODUCTNAME%}/g, product.productName);
   output = output.replace(/{%IMAGE%}/g, product.image);
   output = output.replace(/{%PRICE%}/g, product.price);
   output = output.replace(/{%FROM%}/g, product.from);
