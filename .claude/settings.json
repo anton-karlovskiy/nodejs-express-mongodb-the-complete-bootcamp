@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "Review the conversation and identify any tasks the user explicitly requested. Are there any that have not been completed? If yes, respond with {\"ok\": false, \"reason\": \"<what remains>\"}. If all requested tasks are done, respond with {\"ok\": true}."
+            "prompt": "Review the conversation and identify any tasks the user explicitly requested. Distinguish between: (1) incomplete actionable tasks — work the user asked to be done that has not been done yet; and (2) standing constraints or preferences — instructions like 'do not commit until I say so', 'always ask before pushing', 'from now on do X' — these are active rules, not tasks to complete, and should NOT be treated as incomplete. If there are incomplete actionable tasks, respond with {\"ok\": false, \"reason\": \"<what remains>\"}. Otherwise respond with {\"ok\": true}."
           }
         ]
       }
