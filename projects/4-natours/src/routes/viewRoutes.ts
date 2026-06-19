@@ -1,5 +1,5 @@
 import express from 'express';
-import * as viewsController from '../controllers/viewsController';
+import * as viewsController from '../controllers/viewController';
 import * as authController from '../controllers/authController';
 import * as bookingController from '../controllers/bookingController';
 

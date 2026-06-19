@@ -61,7 +61,7 @@ reviewSchema.statics.calcAverageRatings = async function (tourId: mongoose.Types
     {
       $group: {
         _id: '$tour',
-        nRating: { $sum: 1 },
+        numRatings: { $sum: 1 },
         avgRating: { $avg: '$rating' }
       }
     }
@@ -69,7 +69,7 @@ reviewSchema.statics.calcAverageRatings = async function (tourId: mongoose.Types
 
   if (stats.length > 0) {
     await Tour.findByIdAndUpdate(tourId, {
-      ratingsQuantity: stats[0].nRating,
+      ratingsQuantity: stats[0].numRatings,
       ratingsAverage: stats[0].avgRating
     });
   } else {
@@ -84,15 +84,15 @@ reviewSchema.post('save', function (this: IReview) {
   (this.constructor as IReviewModel).calcAverageRatings(this.tour);
 });
 
-reviewSchema.pre(/^findOneAnd/, async function (this: mongoose.Query<unknown, unknown> & { r?: IReview }, next) {
-  this.r = (await this.findOne()) as IReview;
+reviewSchema.pre(/^findOneAnd/, async function (this: mongoose.Query<unknown, unknown> & { doc?: IReview }, next) {
+  this.doc = (await this.findOne()) as IReview;
   next();
 });
 
 // Bug fix: changed from pre to post so it runs after the update is persisted
-reviewSchema.post(/^findOneAnd/, async function (this: mongoose.Query<unknown, unknown> & { r?: IReview }) {
-  if (this.r) {
-    await (this.r.constructor as IReviewModel).calcAverageRatings(this.r.tour);
+reviewSchema.post(/^findOneAnd/, async function (this: mongoose.Query<unknown, unknown> & { doc?: IReview }) {
+  if (this.doc) {
+    await (this.doc.constructor as IReviewModel).calcAverageRatings(this.doc.tour);
   }
 });
 

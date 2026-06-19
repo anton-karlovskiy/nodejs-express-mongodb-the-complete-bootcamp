@@ -15,7 +15,7 @@ export interface IUser extends Document {
   passwordResetExpires?: Date;
   active?: boolean;
   correctPassword(candidatePassword: string, userPassword: string): Promise<boolean>;
-  changedPasswordAfter(JWTTimestamp: number): boolean;
+  changedPasswordAfter(jwtTimestamp: number): boolean;
   createPasswordResetToken(): string;
 }
 
@@ -91,12 +91,12 @@ userSchema.methods.correctPassword = async function (
   return bcrypt.compare(candidatePassword, userPassword);
 };
 
-userSchema.methods.changedPasswordAfter = function (JWTTimestamp: number) {
+userSchema.methods.changedPasswordAfter = function (jwtTimestamp: number) {
   if (this.passwordChangedAt) {
     const changedTimestamp = Math.floor(
       (this.passwordChangedAt as Date).getTime() / 1000
     );
-    return JWTTimestamp < changedTimestamp;
+    return jwtTimestamp < changedTimestamp;
   }
   return false;
 };

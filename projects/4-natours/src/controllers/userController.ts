@@ -34,10 +34,10 @@ export const resizeUserPhoto = catchAsync(async (req: Request, _res: Response, n
   next();
 });
 
-const filterObj = (obj: Record<string, unknown>, ...allowedFields: string[]): Record<string, unknown> => {
+const pickFields = (obj: Record<string, unknown>, ...allowedFields: string[]): Record<string, unknown> => {
   const newObj: Record<string, unknown> = {};
-  Object.keys(obj).forEach(el => {
-    if (allowedFields.includes(el)) newObj[el] = obj[el];
+  Object.keys(obj).forEach(key => {
+    if (allowedFields.includes(key)) newObj[key] = obj[key];
   });
   return newObj;
 };
@@ -56,7 +56,7 @@ export const updateMe = catchAsync(async (req: Request, res: Response, next: Nex
     );
   }
 
-  const filteredBody = filterObj(req.body as Record<string, unknown>, 'name', 'email');
+  const filteredBody = pickFields(req.body as Record<string, unknown>, 'name', 'email');
   if (req.file) filteredBody.photo = req.file.filename;
 
   const updatedUser = await User.findByIdAndUpdate(req.user!.id, filteredBody, {
