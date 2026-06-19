@@ -1,9 +1,19 @@
 {
+    "eslint.useFlatConfig": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "cSpell.words": [
         "Geospatial",
         "Mapbox",
         "Natours",
         "Schmedtmann",
-        "signup"
+        "signup",
+        "tsconfig",
+        "tsdk",
+        "tsx"
     ]
 }
