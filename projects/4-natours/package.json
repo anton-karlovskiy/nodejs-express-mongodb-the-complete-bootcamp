@@ -9,8 +9,8 @@
     "start:prod": "NODE_ENV=production node dist/server.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src",
-    "watch:js": "parcel watch public/js/index.js --dist-dir public/js --out-file bundle.js",
-    "build:js": "parcel build public/js/index.js --dist-dir public/js --out-file bundle.js",
+    "watch:js": "parcel watch src/public/js/bundle.ts --dist-dir public/js",
+    "build:js": "parcel build src/public/js/bundle.ts --dist-dir public/js --no-content-hash",
     "import-data": "tsx src/dev-data/import-dev-data.ts --import",
     "delete-data": "tsx src/dev-data/import-dev-data.ts --delete"
   },
