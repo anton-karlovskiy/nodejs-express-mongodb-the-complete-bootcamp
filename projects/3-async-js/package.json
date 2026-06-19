@@ -1,0 +1,31 @@
+{
+  "name": "asynchronous-js",
+  "version": "1.0.0",
+  "description": "Async JS demos — callbacks, promises, async/await",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "start:dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "author": "Jonas Schmedtmann",
+  "license": "ISC",
+  "dependencies": {
+    "superagent": "^10.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "@types/superagent": "^8.1.9",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
